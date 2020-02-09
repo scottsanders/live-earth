@@ -31,5 +31,6 @@ curl "https://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/${year}/${mon
 curl "https://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/${year}/${month}/${day}/${time}_2_3.png" -o 2_3.png
 curl "https://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/${year}/${month}/${day}/${time}_3_3.png" -o 3_3.png
 
-montage [0-3]_0.png [0-3]_1.png [0-3]_2.png [0-3]_3.png -tile 4x4 -geometry +0+0 Earth.png
+which montage
+# montage [0-3]_0.png [0-3]_1.png [0-3]_2.png [0-3]_3.png -tile 4x4 -geometry +0+0 Earth.png
 # convert Earth.png -gravity center -background black -extent 4188x2618 Earth-Resized.jpg 
